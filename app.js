@@ -20,7 +20,7 @@ function renderFavorites() {
   }
   root.innerHTML = favorites.map((item) => {
     const poem = poems[item];
-    return `<article class="favorite"><h3>${poem.title}</h3><p>${poem.dynasty} · ${poem.author} · ${poem.form}</p></article>`;
+    return `<article class="favorite"><h3><a href="poem.html?id=${item}">${poem.title}</a></h3><p>${poem.dynasty} · ${poem.author} · ${poem.form}</p></article>`;
   }).join('');
 }
 

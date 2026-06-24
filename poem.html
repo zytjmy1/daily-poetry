@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173b36" />
+    <title>诗词详情｜一日一诗</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="detail-page">
+      <header class="detail-top">
+        <a class="brand" href="index.html"><span class="brand-mark">诗</span><span>一日一诗</span></a>
+        <a class="back-link" href="index.html">← 返回首页</a>
+      </header>
+      <article id="detail-card" class="detail-card">
+        <p id="detail-meta" class="poem-meta"></p>
+        <h1 id="detail-title"></h1>
+        <p id="detail-author" class="poem-author"></p>
+        <blockquote id="detail-lines" class="detail-text"></blockquote>
+        <div class="detail-footer">
+          <span id="detail-source"></span>
+          <button id="detail-copy" type="button">复制全文</button>
+        </div>
+      </article>
+    </main>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="poems-data-simplified-v2.js"></script>
+    <script src="poem-detail.js"></script>
+  </body>
+</html>
