@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173b36" />
+    <title>一日一诗｜每日古诗词</title>
+    <meta name="description" content="每天一首好诗，在匆忙里留一小片清雅。" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="一日一诗首页">
+          <span class="brand-mark">诗</span>
+          <span>一日一诗</span>
+        </a>
+        <time id="today" class="today"></time>
+        <button id="favorite-button" class="text-button" type="button" aria-pressed="false">收藏此诗</button>
+      </header>
+
+      <section class="hero" aria-labelledby="poem-title">
+        <p class="eyebrow">TODAY'S VERSE <span></span> 每日推荐</p>
+        <div class="poem-card">
+          <div class="seal">读</div>
+          <p id="poem-dynasty" class="poem-meta"></p>
+          <h1 id="poem-title"></h1>
+          <p id="poem-author" class="poem-author"></p>
+          <blockquote id="poem-lines" class="poem-lines"></blockquote>
+          <div class="card-bottom">
+            <span class="mood"><i></i><span id="poem-mood"></span></span>
+            <button id="copy-button" class="icon-button" type="button" title="复制诗句" aria-label="复制诗句">⌘</button>
+          </div>
+        </div>
+        <button id="next-button" class="next-button" type="button">换一首 <span>→</span></button>
+      </section>
+
+      <section class="reading" aria-labelledby="reading-title">
+        <div class="section-heading">
+          <p class="eyebrow">A QUIET MOMENT</p>
+          <h2 id="reading-title">今日读诗</h2>
+        </div>
+        <article class="interpretation">
+          <p id="poem-note"></p>
+          <div class="tags" id="poem-tags"></div>
+        </article>
+      </section>
+
+      <section class="favorites-section" aria-labelledby="favorites-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">MY COLLECTION</p>
+          <h2 id="favorites-title">我的诗笺</h2>
+        </div>
+        <div id="favorites" class="favorites"><p class="empty-state">还没有收藏。遇见喜欢的诗，就把它留下来。</p></div>
+      </section>
+    </main>
+    <footer>愿你每日都有片刻，与古人同坐。</footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
